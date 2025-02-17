@@ -1,23 +1,40 @@
-{% extends 'todo/layout.html' %}
+{% extends 'todo/layout.html' %} {% block content %}
 
-{% block content %}
-        <h1>Lista de mis actividades</h1>
+<div class="header-bar">
+  <h1>Hola bienvenido de vuelta</h1>
 
-        <ul>
-        <table class="table">
-            {% for tarea in tareas %}
+      <a id="add-link" href="{% url 'agregar' %}" transforme: translate="">+</a> 
+</div>
 
-            <tbody>
-                <tr>
-                    <td>{{tarea}}</td>
-                    <td><button><a href="{% url 'eliminar' tarea.id %}">Eliminar</a></button></td>
-                    <td><button><a href="{% url 'editar' tarea.id %}">Editar</a></button></td>
-                </tr>
-            </tbody>
-            {% endfor %}
-        </table>
+<table class="table">
+  {% for tarea in tareas %}
+  <tbody>
+    <tr> 
+      <td>
+        <a id="task-title" href="{% url 'editar' tarea.id %}">{{ tarea }}</a>
+      </td>
+      <td align="center">
+          <a id="delete" href="{% url 'eliminar' tarea.id %}">&#215</a>
+      </td>
+    </tr>
+  </tbody>
+  {% endfor %}
+</table>
 
-
-        </ul>
-
+<!-- Pagination Footer-->
+<nav aria-label="..." >
+  <ul class="pagination" >
+    <li class="page-item disabled">
+      <a style="color: #ffffff; background-color: indigo;"  class="page-link" href="#">Previous</a>
+    </li>
+    <li class="page-item"><a style="color: #ffffff; background-color: darkviolet"class="page-link" href="#">1</a></li>
+    <li class="page-item active" aria-current="page">
+      <a style="color: #ffffff; background-color: darkviolet;"class="page-link" href="#">2</a>
+    </li>
+    <li class="page-item"><a style="color: #ffffff; background-color: darkviolet;"class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a style="color: #ffffff; background-color: indigo;"  class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
 {% endblock %}

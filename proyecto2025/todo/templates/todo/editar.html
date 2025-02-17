@@ -1,12 +1,7 @@
-{% extends 'todo/layout.html' %}
-
-{% block content %}
-
-<form method = "post">
-
-    {% csrf_token %}
-    {{ form }}
-    <button>Editar Tarea</button>
+{% extends 'todo/layout.html' %} {% block content %}
+<form class="edit-screen" method="post">
+  {% csrf_token %} {{ form }}
+  <button type="submit" class="btn btn-warning">Editar</button>
 </form>
-
 {% endblock %}
+ 
