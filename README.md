@@ -15,9 +15,6 @@ Instrucciones detalladas sobre cómo instalar el proyecto, incluyendo dependenci
 
 
 ## Construido con
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
 * [![Django][Django.com]][Django-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
@@ -45,4 +42,6 @@ Visualizar la aplicaciones en el puerto generado
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [Django-url]: https://django.com
-[Next-url]: https://nextjs.org/
+[Django.com]: https://img.shields.io/badge/django-092e20?style=for-the-badge&logo=django&logoColor=green
+[Bootstrap-url]: https://getbootstrap.com
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
