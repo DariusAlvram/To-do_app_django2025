@@ -1,7 +1,3 @@
-[![Forks][forks-shield]][forks-url]
-[![Issues][issues-shield]][issues-url]
-[![Unlicense License][license-shield]][license-url]
-
 # To Do app
 
 <!-- USAGE EXAMPLES -->
@@ -9,15 +5,13 @@
 > Aplicacion de tareas por hacer simple y minimalista
 
 
-## Instalación
-
-Instrucciones detalladas sobre cómo instalar el proyecto, incluyendo dependencias y requisitos del sistema.
-
-
 ## Construido con
 * [![Django][Django.com]][Django-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
+## Instalación
+
+Instrucciones detalladas sobre cómo instalar el proyecto, incluyendo dependencias y requisitos del sistema.
 
 Paso 1
 ```bash 
